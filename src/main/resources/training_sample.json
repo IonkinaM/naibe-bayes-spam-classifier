@@ -1,0 +1,34 @@
+[
+  {
+    "content": "Hi, how are doing?",
+    "spamClassifier": "NOT_SPAM"
+  },
+  {
+    "content": "Let's walk this evening",
+    "spamClassifier": "NOT_SPAM"
+  },
+  {
+    "content": "Hey dude, you parked my car",
+    "spamClassifier": "NOT_SPAM"
+  },
+  {
+    "content": "Congratulations, you won a prize! Go through this link and get you guarantee money",
+    "spamClassifier": "SPAM"
+  },
+  {
+    "content": "Buy the product now and get a discount! The sale is about 50%, hurry up!",
+    "spamClassifier": "SPAM"
+  },
+  {
+    "content": "Hurry up to take advantage of the discount on an annual subscription to JavaRush today – we are giving you a 50% discount plus a cool personal bonus for training!\n\nStart learning on the best Java programming course in the world: with practice, automatic task checking, useful recommendations, games and a huge community.",
+    "spamClassifier": "SPAM"
+  },
+  {
+    "content": "Hello!\n\nWe are the ADAPTER promotion department and we want to talk to you about development on Ozon and Wildberries.\n\nOver the past 6 years, we have greatly improved our expertise in promoting and creating unique content on marketplaces and are ready to accept even more clients!\n\nIf you want to bypass all competitors and gain a foothold in the TOP of your niche, sign up for a meeting with our expert.\n\nWe will prepare a free audit for you and you will:\n\n✅ See how your content is inferior to your competitor\n\n✅ Get recommendations on effective advertising setup\n✅ Find out how much you can earn by becoming our client",
+    "spamClassifier": "SPAM"
+  },
+  {
+    "content": "A sign in attempt requires further verification because we did not recognize your device. To complete the sign in, enter the verification code on the unrecognized device.\n\nDevice: Yandex on Windows\nVerification code: 11111\n\nIf you did not attempt to sign in to your account, your password may be compromised. Visit https://github.com/settings/security to create a new, strong password for your GitHub account.\n\nIf you'd like to automatically verify devices in the future, consider enabling two-factor authentication on your account. Visit https://docs.github.com/articles/configuring-two-factor-authentication to learn about two-factor authentication.\n\nIf you decide to enable two-factor authentication, ensure you retain access to one or more account recovery methods. See https://docs.github.com/articles/configuring-two-factor-authentication-recovery-methods in the GitHub Help.\n\nThanks,\nThe GitHub Team",
+    "spamClassifier": "NOT_SPAM"
+  }
+]
