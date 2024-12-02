@@ -28,7 +28,7 @@ public class NaiveBayesClassifierService {
         // Укажите путь к вашему JSON файлу
         File jsonFile = new File("src/main/resources/training_sample.json");
 
-        // Чтение JSON файла и преобразование в List<Message>
+        // Чтение JSON файла и преобразование в List<Message> (в объекты)
         List<Message> messages = objectMapper.readValue(jsonFile, new TypeReference<List<Message>>() {
         });
         train(messages);
@@ -36,7 +36,9 @@ public class NaiveBayesClassifierService {
     }
 
     // Обучение на основе выборки
-    // На вход получает выборку в формате коллекции объектов
+    // На вход получает выборку в формате коллекции объеектов
+    // Он принимает список сообщений (`List<Message>`)
+    // и подсчитывает частоту встречаемости каждого слова в спам и не спам сообщениях.
     private void train(List<Message> messages) {
         for (Message message : messages) {
             String[] words = message.getContent().toLowerCase().split("\\W+");

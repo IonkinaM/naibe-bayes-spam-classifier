@@ -10,7 +10,8 @@ public class Main {
     private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) throws IOException {
-        NaiveBayesClassifierService classifier = new NaiveBayesClassifierService(); // создание объекта класса байесовского классификатора
+        // создание объекта класса байесовского классификатора
+        NaiveBayesClassifierService classifier = new NaiveBayesClassifierService();
 
         String testMessage = "Hi, you won a prize 100$ for free and you can get the prize when you need. Just go through this link.";
         Message result = classifier.classify(testMessage);

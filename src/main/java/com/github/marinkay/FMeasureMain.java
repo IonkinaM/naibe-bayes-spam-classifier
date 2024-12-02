@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
+// обучаем алгоритм,предоставляя ему сообщения с четким типом (обучение с учителем),
+// оцениваем качество работы на основе обучения
 public class FMeasureMain {
     private static final Logger LOGGER = Logger.getLogger(FMeasureMain.class.getName());
 
@@ -20,6 +22,8 @@ public class FMeasureMain {
         FMeasureCalculator fMeasureCalculator = new FMeasureCalculator();
 
         // Пример входных сообщений с реальными метками
+        // Даю сообщения алгоритму, он сам определяет, а я на основе правильных.неправильных ответов,
+        // считаем метрики и затем f-меру
         List<Message> testMessages = new ArrayList<>();
         testMessages.add(new Message("Congratulations! You've won a prize!", SpamClassifierEnum.SPAM));
         testMessages.add(new Message("Your invoice is attached.", SpamClassifierEnum.NOT_SPAM)); // Сообщение которое не СПАМ, но алгоритм определяет как СПАМ из-за слабой выборки
